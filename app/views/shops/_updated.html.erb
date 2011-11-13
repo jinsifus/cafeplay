@@ -1,0 +1,12 @@
+<h2>Today's Updates</h2>
+<ul>
+	<% if @shop.updates.empty? %>
+		<p>No updates yet</p>
+	<% else %>
+		<% @shop.updates.each do |update| %>
+			<li>
+				<%= update.comment %>(<%= time_ago_in_words(update.updated_at) %> ago)
+			</li>
+		<% end %>
+	<% end %>
+</ul>
