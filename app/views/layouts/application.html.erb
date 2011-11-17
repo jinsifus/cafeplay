@@ -6,9 +6,33 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+  <div id="content">
+    <div id="header">
+      <h1>CafePlay</h1>
+      <p></p>
+      <h2>The Stop for Coffee Shop Play-by-Play</h2>  
+      
+      <div id="login">
+      <% if User.find_by_id(session[:user_id]) %>
+        <%= link_to "My Profile", @user %>
+        <%= link_to "Sign Out", signout_url, :method => :delete %>
+        <br></br>
+      <% else %>
+        <%= form_tag '/sessions/create' do %>
+        <p>Please enter your <%= label_tag 'email' %> 
+        <%= text_field_tag :email %> and <%= label_tag 'password' %> 
+        <%= password_field_tag :password %> <%= submit_tag 'Sign In' %></p>
+        <% end %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 <body>
-
 <%= yield %>
-
 </body>
 </html>

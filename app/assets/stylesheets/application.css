@@ -10,10 +10,11 @@
 body {
     margin: 0;
     margin-bottom: 25px;
-    padding: 0;
-    background-color: #f0f0f0;
+    float: left;
+    background-color: white;
+    padding: 50px;
     font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-    font-size: 13px;
+    font-size: 10px;
     color: #333;
   	}
 
@@ -22,48 +23,18 @@ h1 {
     color: #000;
   	}
 
-a  {color: #03c}
-a:hover {
-    background-color: #03c;
-    color: white;
-    text-decoration: none;
-  	}
-
-
-#page {
-    background-color: #f0f0f0;
-    width: 750px;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-  	}
-
 #content {
     float: left;
     background-color: white;
     border: 3px solid #aaa;
-    border-top: none;
-    padding: 25px;
-    width: 500px;
+	border-left: none;
+	border-right: none;
+    padding-top: 25px;
+	padding-bottom: 25px;
+    width: 1200px;
   	}
-
-#sidebar {
-    float: right;
-    width: 175px;
-  	}
-
-#footer {
-    clear: both;
-  	}
-
-#header, #about, #options {
-    padding-left: 75px;
-    padding-right: 30px;
-  	}
-
 
 #header {
-    background-image: url();
     background-repeat: no-repeat;
     background-position: top left;
     height: 64px;
@@ -75,106 +46,16 @@ a:hover {
     font-size: 16px;
   	}
 
-
-#about h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 14px;
-  	}
-
-#about-content {
-    background-color: #ffd;
-    border: 1px solid #fc0;
-    margin-left: -55px;
-    margin-right: -10px;
-  	}
-#about-content table {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 11px;
-    border-collapse: collapse;
-  	}
-#about-content td {
-    padding: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  	}
-#about-content td.name  {color: #555}
-#about-content td.value {color: #000}
-
-#about-content ul {
-    padding: 0;
-    list-style-type: none;
-  	}
-
-#about-content.failure {
-    background-color: #fcc;
-    border: 1px solid #f00;
-  	}
-#about-content.failure p {
-    margin: 0;
-    padding: 10px;
-  	}
-
-
-#options {
-    border-top: 1px solid #ccc;
-    margin-top: 25px;
-    padding-top: 15px;
-  	}
-#options h1 {
-    margin: 0;
-    font-size: 20px;
-  	}
-#options h2 {
-    margin: 0;
-    font-size: 14px;
-    font-weight: normal;
-    color: #333;
-    margin-bottom: 25px;
-  	}
-#options ol {
-    margin-left: 0;
-    padding-left: 0;
-  	}
-#options li {
-    font-size: 18px;
-    color: #888;
-    margin-bottom: 25px;
-  	}
-#options li h2 {
-    margin: 0;
-    font-weight: normal;
-    font-size: 18px;
-    color: #333;
-  	}
-#options li p {
-    color: #555;
-    font-size: 13px;
-  	}
-
-#sidebar ul {
-    margin-left: 0;
-    padding-left: 0;
-  	}
-#sidebar ul h3 {
-    margin-top: 25px;
-    font-size: 16px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-  	}
-#sidebar li {
-    list-style-type: none;
-  	}
-#sidebar ul.links li {
-    margin-bottom: 5px;
-  	}
+#login {
+	float: right;
+}
 
 .filename {
     font-style: italic;
   	}
 
 td {
-	border: 1px solid #444;
-	padding: 1 2 1 2em;
-}
+	border-bottom: 0px solid #444;
+	padding-left: 2em;
+	padding-right: 2em;
+	}

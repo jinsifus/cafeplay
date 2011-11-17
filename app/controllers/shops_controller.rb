@@ -1,4 +1,15 @@
 class ShopsController < ApplicationController
+
+  before_filter :require_user
+
+  def require_user
+    if session[:user_id].blank?
+      redirect_to signin_url
+      return
+    end
+    @user = User.find(session[:user_id])
+  end
+
   # GET /shops
   # GET /shops.json
   def index

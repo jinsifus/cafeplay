@@ -1,14 +1,16 @@
 Cafeplay::Application.routes.draw do
-  
-  get "sessions/new", :as => :new_session
+
+  root :to => "sessions#new"
+    
+  get "sessions/new", :as => :signin
   post "sessions/create"
-  delete "sessions/destroy"
+  delete "sessions/destroy", :as => :signout
 
   resources :updates
 
   resources :shops
   resources :users
-  root :to => "shops#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
